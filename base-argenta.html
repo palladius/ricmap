@@ -15,9 +15,10 @@
     <script>
 var map;
 function initialize() {
+ // Argenta: https://maps.google.com/maps?ll=44.616042,11.827673&spn=0.007041,0.018164&t=m&z=17&iwloc=lyrftr:starred_items:116321025604423879432:,Via+Nazionale+Ponente*,+46*,+I-44011+Argenta+FE*,+Italy,44.616783,11.826117&lci=com.panoramio.all,com.youtube.all,com.google.webcams,weather,bike
   var mapOptions = {
-    zoom: 11,
-    center: new google.maps.LatLng(44.397, 11.644), // Argenta, Italy
+    zoom: 17,
+    center: new google.maps.LatLng(44.616042 , 11.82767), // Argenta, Italy
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -29,6 +30,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
     </script>
   </head>
   <body>
+    Da qui: https://google-developers.appspot.com/maps/documentation/javascript/examples/map-simple
     <div id="map-canvas"></div>
   </body>
 </html>
